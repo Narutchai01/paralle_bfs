@@ -1,0 +1,62 @@
+version: '3.9'
+
+services:
+  node1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ID=1
+      - PORT=3001
+    ports:
+      - "3001:3001"
+
+  node2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ID=2
+      - PORT=3002
+    ports:
+      - "3002:3002"
+
+  node3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ID=3
+      - PORT=3003
+    ports:
+      - "3003:3003"
+
+  node4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ID=4
+      - PORT=3004
+    ports:
+      - "3004:3004"
+
+  node5:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ID=5
+      - PORT=3005
+    ports:
+      - "3005:3005"
+
+  node6:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ID=6
+      - PORT=3006
+    ports:
+      - "3006:3006"
