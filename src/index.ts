@@ -11,11 +11,11 @@ const app = new Elysia();
 type Graph = { [key: number]: number[] };
 const graph: Graph = {
   1: [2, 3],
-  2: [4],
-  3: [5, 6],
-  4: [],
-  5: [],
-  6: [],
+  2: [1,4],
+  3: [1,5, 6],
+  4: [2],
+  5: [3],
+  6: [3],
 };
 
 // Function to perform BFS
